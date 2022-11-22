@@ -32,7 +32,6 @@ def read_data(table, table_name):
 
 def update_data(table, row1, column, new_value):
     print('data was updated')
-    table.delete(row1, columns=[column])
     table.put(row1, {column: new_value})
 
 
